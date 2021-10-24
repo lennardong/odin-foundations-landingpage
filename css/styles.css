@@ -2,5 +2,131 @@
 
 
 /* container color*/
-.header, .container-a{background-color: #1F2937;}
+.header, .container-a{}
 .container-c{background-color: rgb(179, 179, 179);}
+
+/* -------------------------------------------*/
+/* FONT STYLING*/
+/* -------------------------------------------*/
+html {
+    /*graphics - color, font, height */
+    font-family: monospace;    
+}
+
+h1 {
+    /* for webpage */
+    font-size: 48px;
+    font-weight: 900;
+}
+
+h2  {
+    /* for section headers */ 
+    font-size: 36px;
+    font-weight: 900;
+
+}
+
+h3 {
+    /* for footer */
+}
+
+/*padding */
+.header, .A, .B, .C, .footer{
+    padding: 10px 100px 10px 100px;
+}
+
+/* -------------------------------------------*/
+/* HEADER*/
+/* -------------------------------------------*/
+
+.header {
+    /*graphics - color, font, height */
+    background-color: #1F2937;
+    color: white;
+
+    /*layout - alignment, etc */
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left {
+    /*layout - alignment, etc */
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    /*layout - alignment, etc */
+    display: flex;
+    align-items: center;
+}
+
+.header>ul {
+    /*layout - alignment, etc */
+    display: flex; 
+    list-style-type: none;
+    gap: 10px; 
+    padding: 10px;
+    margin: 10px;
+}
+
+/* -------------------------------------------*/
+/* SECTION A*/
+/* -------------------------------------------*/
+
+.A {
+    /*graphics - color, font, height */
+    background-color: #1F2937;
+    color: white;
+    height: 300px;
+    /*layout - alignment, etc */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.A1 {
+    /*layout - alignment, etc */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.A2{
+    /*graphics - color, font, height */
+    background-color: cornsilk;
+    height: 200px;
+    width: 300px;
+}
+
+/* -------------------------------------------*/
+/* SECTION B*/
+/* -------------------------------------------*/
+
+.B {
+    /*graphics - color, font, height */
+    text-align: center;
+
+    /*layout - alignment, etc */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.B2 {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.B2-Tile {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    
+}
