@@ -1,132 +1,185 @@
-/* global fonts & sizing*/
-
-
-/* container color*/
-.header, .container-a{}
-.container-c{background-color: rgb(179, 179, 179);}
-
 /* -------------------------------------------*/
-/* FONT STYLING*/
+/* GLOBAL STYLING*/
 /* -------------------------------------------*/
 html {
-    /*graphics - color, font, height */
+    /*STYLING - color, font, height */
     font-family: monospace;    
 }
-
 h1 {
     /* for webpage */
     font-size: 48px;
     font-weight: 900;
 }
-
 h2  {
     /* for section headers */ 
     font-size: 36px;
     font-weight: 900;
-
 }
-
 h3 {
     /* for footer */
 }
-
-/*padding */
-.header, .A, .B, .C, .footer{
+button {
+    /*box */
+    background-color: #3882F6;
+    padding: 10px;
+    max-width: 150px;
+    min-width: 50px;
+    border-radius: 10px;
+    border-width: 0px;
+    /*text */ 
+    color: white; 
+}
+img{
+    height: fit-content;
+    width: fit-content;
+}
+.header, .A, .B, .C, .D, .footer{
     padding: 10px 100px 10px 100px;
 }
-
+.B, .C{
+    padding: inherit + 50px; 
+}
 /* -------------------------------------------*/
 /* HEADER*/
 /* -------------------------------------------*/
-
 .header {
-    /*graphics - color, font, height */
+    /*STYLING - color, font, height */
     background-color: #1F2937;
     color: white;
 
-    /*layout - alignment, etc */
+    /*SETTINGOUT - alignment, etc */
     display: flex;
     justify-content: space-between;
 }
-
 .header-left {
-    /*layout - alignment, etc */
+    /*SETTINGOUT - alignment, etc */
     display: flex;
     align-items: center;
 }
-
 .header-right {
-    /*layout - alignment, etc */
+    /*SETTINGOUT - alignment, etc */
     display: flex;
     align-items: center;
 }
-
-.header>ul {
-    /*layout - alignment, etc */
+.header-right>ul {
+    /*SETTINGOUT - alignment, etc */
     display: flex; 
     list-style-type: none;
     gap: 10px; 
-    padding: 10px;
     margin: 10px;
 }
-
 /* -------------------------------------------*/
 /* SECTION A*/
 /* -------------------------------------------*/
-
 .A {
-    /*graphics - color, font, height */
+    /*STYLING - color, font, height */
     background-color: #1F2937;
     color: white;
-    height: 300px;
-    /*layout - alignment, etc */
+    height: auto;
+    /*SETTINGOUT - alignment, etc */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
+    column-gap: 30px;
+    padding-bottom: 30px;
 }
-
 .A1 {
-    /*layout - alignment, etc */
+    /*SETTINGOUT - alignment, etc */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    width: 50%;
 }
-
 .A2{
-    /*graphics - color, font, height */
+    /*STYLING - color, font, height */
     background-color: cornsilk;
-    height: 200px;
-    width: 300px;
+    align-items: center;
+    justify-content: center;
+    /*image*/
+    max-height: 300px;
+    min-height: 150px;
+    max-width: 300px;
+    min-width: 150px;
 }
-
 /* -------------------------------------------*/
 /* SECTION B*/
 /* -------------------------------------------*/
-
 .B {
-    /*graphics - color, font, height */
+    /*STYLING - color, font, height */
     text-align: center;
 
-    /*layout - alignment, etc */
+    /*SETTINGOUT - alignment, etc */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
 }
-
 .B2 {
     display: flex; 
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
-
 .B2-Tile {
+    /*setting out*/
     display: flex;
     flex-direction: column;
+    /*box*/
+    height: auto;
+    width: 100%;
+    align-items: center;
+    background-color: sandybrown;
+}
+.B2-Tile>img {
     height: 100px;
     width: 100px;
-    align-items: center;
-    
+    background: pink;
+    border-radius: 30px;
 }
+/* -------------------------------------------*/
+/* SECTION C*/
+/* -------------------------------------------*/
+.C {
+    /*STYLING - color, font, height */
+    text-align: center;
+    background: #E5E7EB; /*???what is the difference betwwen background and background-color?*/
+    /*SETTINGOUT - alignment, etc */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.C>h2 {
+    text-align: left;
+    font-weight: 100;
+    font-style: italic;
+}
+.C>p {
+    margin-left: auto;
+    font-weight: 900;
+}
+/* -------------------------------------------*/
+/* SECTION CD/
+/* -------------------------------------------*/
+.D{ 
+    display: flex;
+    /*set margins*/
+    margin: 100px 20% 100px 20%; 
+    padding: 50px 5% 50px 5%; 
+    background: #3882F6;
+    gap: 50px; 
+    border-radius: 10px; 
+    align-items: center;
+}
+.D-left{
+    flex: 2 2 0; /* does this do anything? */ 
+    color: white;
+}
+.D>button{
+    border-width: 1px;
+    border-color: white;
+    border-style:solid;
+}
+    
