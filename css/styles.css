@@ -105,16 +105,12 @@ button {
     width: 200px;
 }
 .seq img {
-    width: 200px;
-    height: 200px; 
+    width: 150px;
+    height: 150px; 
     object-fit: cover; /* for scaling img */
-    border: 4px solid #3882F6;
+    border: 4px solid magenta;
     border-radius: 10%;
     background: black;
-}
-.B2 p{
-    text-align: center;
-    max-width: 200px; /* ??? how to make the text wrap to the lower line? */
 }
 
 /*C - quote*/
@@ -128,6 +124,7 @@ button {
     text-align: left;
     font-weight: 100;
     font-style: italic;
+    font-size: 25px;
     /*??? how to inherit the padding of the parent conatiner? */
 }
 .C p {
@@ -166,4 +163,10 @@ button {
     background-color:#1F2937;
     color: white;
     text-align: center;
+}
+
+.comment {
+    font-size: 8pt;
+    opacity: 40%;
+    text-decoration: none;
 }
